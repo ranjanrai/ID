@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Name Verification</title>
+  <style>
+    body { font-family: Arial; background:#f4f4f4; }
+    .box {
+      width: 500px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    input, button {
+      width: 100%;
+      padding: 8px;
+      margin-top: 10px;
+    }
+    .card {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      background: #fafafa;
+    }
+    .success { color: green; }
+    .error { color: red; }
+  </style>
+</head>
+<body>
+
+<div class="box">
+  <h3>Search Student by Name</h3>
+
+  <input type="text" id="sname" placeholder="Enter Student Full Name">
+  <button onclick="searchStudent()">Search</button>
+
+  <div id="result"></div>
+</div>
+
+<script>
+function searchStudent() {
+  let name = document.getElementById("sname").value.trim();
+
+  if (!name) {
+    document.getElementById("result").innerHTML =
+      "<p class='error'>⚠ Please enter a name</p>";
+    return;
+  }
+
+  let url =
+  "https://script.google.com/macros/s/AKfycbxuZvuwZ-eO8BNw4xQg-Y8IJ9plEhdT2p88CtDj1boEvSO1E9M3xU2FSDCz0nGOWCdg/exec?name="
+  + encodeURIComponent(name);
+
+  fetch(url)
+    .then(res => res.json())
+    .then(data => {
+      if (data.found) {
+        let html = "<p class='success'><b>✔ Students Found</b></p>";
+
+        data.students.forEach(s => {
+          html += `
+            <div class="card">
+              <b>ID:</b> ${s.student_id}<br>
+              <b>Name:</b> ${s.full_name}<br>
+              <b>Father:</b> ${s.father}<br>
+              <b>Mother:</b> ${s.mother}<br>
+              <b>Course:</b> ${s.course}<br>
+              <b>Session:</b> ${s.session}<br>
+              <b>District:</b> ${s.district}, ${s.state}<br>
+              <b>Pincode:</b> ${s.pincode}
+            </div>
+          `;
+        });
+
+        document.getElementById("result").innerHTML = html;
+      } else {
+        document.getElementById("result").innerHTML =
+          "<p class='error'>❌ No student found</p>";
+      }
+    })
+    .catch(() => {
+      document.getElementById("result").innerHTML =
+        "<p class='error'>⚠ Server error</p>";
+    });
+}
+</script>
+
+</body>
+</html>
