@@ -1,0 +1,30 @@
+[
+  {
+    "student_id": "RCPS/25/B.PHARM/01",
+    "full_name": "ANANDITA RAO",
+    "father": "GOPAL RAO",
+    "mother": "ANJALI RAO",
+    "course": "B.PHARM",
+    "session": "2025-26",
+    "village": "MEZENGA TE",
+    "post": "TITABAR",
+    "police": "TITABAR",
+    "district": "JORHAT",
+    "pincode": "785632",
+    "state": "ASSAM"
+  },
+  {
+    "student_id": "RCPS/25/B.PHARM/02",
+    "full_name": "RAHUL DAS",
+    "father": "SURESH DAS",
+    "mother": "MINA DAS",
+    "course": "B.PHARM",
+    "session": "2025-26",
+    "village": "DERGAON",
+    "post": "DERGAON",
+    "police": "DERGAON",
+    "district": "GOLAGHAT",
+    "pincode": "785614",
+    "state": "ASSAM"
+  }
+]
