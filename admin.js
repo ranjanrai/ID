@@ -1,7 +1,37 @@
-﻿// ==============================
-// UPLOAD PDF
+// ==============================
+// AUTH CHECK (VERY IMPORTANT)
+// ==============================
+let isAdminUser = false;
+
+firebase.auth().onAuthStateChanged(async user => {
+  if (!user) {
+    alert("Please login as admin");
+    return;
+  }
+
+  // Check admin role
+  const snap = await db.collection("users").doc(user.uid).get();
+  if (!snap.exists || snap.data().role !== "admin") {
+    alert("Access denied. Admin only.");
+    return;
+  }
+
+  isAdminUser = true;
+
+  // Load admin-only data AFTER auth
+  loadUploadedPDFs();
+  loadCorrections();
+});
+
+// ==============================
+// UPLOAD PDF (ADMIN ONLY)
 // ==============================
 function uploadPDF() {
+  if (!isAdminUser) {
+    alert("Admin access required");
+    return;
+  }
+
   const file = document.getElementById("pdfFile").files[0];
   if (!file) {
     alert("Select PDF");
@@ -19,26 +49,28 @@ function uploadPDF() {
       });
       alert("PDF uploaded successfully");
     });
-  });
+  }).catch(err => alert(err.message));
 }
 
 // ==============================
-// SHOW UPLOADED PDFs
+// LOAD UPLOADED PDFs (ADMIN)
 // ==============================
-db.collection("uploaded_pdfs")
-  .orderBy("uploadedAt", "desc")
-  .onSnapshot(snapshot => {
-    const list = document.getElementById("pdfList");
-    list.innerHTML = "";
+function loadUploadedPDFs() {
+  db.collection("uploaded_pdfs")
+    .orderBy("uploadedAt", "desc")
+    .onSnapshot(snapshot => {
+      const list = document.getElementById("pdfList");
+      list.innerHTML = "";
 
-    snapshot.forEach(doc => {
-      const d = doc.data();
-      list.innerHTML += `
-        <li>
-          <a href="#" onclick="previewPDF('${d.url}')">${d.name}</a>
-        </li>`;
+      snapshot.forEach(doc => {
+        const d = doc.data();
+        list.innerHTML += `
+          <li>
+            <a href="#" onclick="previewPDF('${d.url}')">${d.name}</a>
+          </li>`;
+      });
     });
-  });
+}
 
 // ==============================
 // PDF PREVIEW
@@ -48,37 +80,44 @@ function previewPDF(url) {
 }
 
 // ==============================
-// SHOW STUDENT CORRECTIONS
+// LOAD STUDENT CORRECTIONS (ADMIN)
 // ==============================
-db.collection("corrections").onSnapshot(snapshot => {
-  const table = document.getElementById("correctionTable");
+function loadCorrections() {
+  db.collection("corrections").onSnapshot(snapshot => {
+    const table = document.getElementById("correctionTable");
 
-  table.innerHTML = `
-    <tr>
-      <th>Student ID</th>
-      <th>Field</th>
-      <th>Old Value</th>
-      <th>New Value</th>
-      <th>Remark</th>
-    </tr>`;
-
-  snapshot.forEach(doc => {
-    const d = doc.data();
-    table.innerHTML += `
+    table.innerHTML = `
       <tr>
-        <td>${d.studentId || ""}</td>
-        <td>${d.field || ""}</td>
-        <td>${d.oldValue || ""}</td>
-        <td>${d.newValue || ""}</td>
-        <td>${d.remark || ""}</td>
+        <th>Student ID</th>
+        <th>Field</th>
+        <th>Old Value</th>
+        <th>New Value</th>
+        <th>Remark</th>
       </tr>`;
+
+    snapshot.forEach(doc => {
+      const d = doc.data();
+      table.innerHTML += `
+        <tr>
+          <td>${d.studentId || ""}</td>
+          <td>${d.field || ""}</td>
+          <td>${d.oldValue || ""}</td>
+          <td>${d.newValue || ""}</td>
+          <td>${d.remark || ""}</td>
+        </tr>`;
+    });
   });
-});
+}
 
 // ==============================
-// EXPORT TO EXCEL
+// EXPORT TO EXCEL (ADMIN)
 // ==============================
 async function downloadCorrections() {
+  if (!isAdminUser) {
+    alert("Admin access required");
+    return;
+  }
+
   const snap = await db.collection("corrections").get();
   const data = [];
   snap.forEach(doc => data.push(doc.data()));
