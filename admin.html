@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>Admin Panel</title>
@@ -6,15 +6,25 @@
 </head>
 <body>
 
-<h2>Admin Upload Panel</h2>
+<h2>Admin Panel</h2>
 
-<!-- Excel Upload -->
-<input type="file" id="excelFile" />
+<!-- ================= LOGIN ================= -->
+<h3>Admin Login</h3>
+<input type="email" id="email" placeholder="Admin Email">
+<input type="password" id="password" placeholder="Password">
+<button onclick="adminLogin()">Login</button>
+
+<hr>
+
+<!-- ================= EXCEL UPLOAD ================= -->
+<h3>Upload Excel</h3>
+<input type="file" id="excelFile" accept=".xlsx,.xls">
 <button onclick="uploadExcel()">Upload Excel</button>
 
 <hr>
 
-<!-- PDF Upload -->
+<!-- ================= PDF UPLOAD ================= -->
+<h3>Upload PDF</h3>
 <input type="file" id="pdfFile" accept="application/pdf">
 <button onclick="uploadPDF()">Upload PDF</button>
 
@@ -22,8 +32,8 @@
 <ul id="pdfList"></ul>
 
 <hr>
-<hr>
 
+<!-- ================= EXCEL VIEW ================= -->
 <h3>Excel Data View</h3>
 <div style="overflow:auto; max-height:400px;">
   <table border="1" id="excelTable"></table>
@@ -31,8 +41,13 @@
 
 <hr>
 
+<!-- ================= PDF PREVIEW ================= -->
 <h3>PDF Preview</h3>
 <iframe id="pdfViewer" width="100%" height="500"></iframe>
+
+<hr>
+
+<!-- ================= STUDENT CORRECTIONS ================= -->
 <h3>Student Corrections</h3>
 <button onclick="downloadCorrections()">Export Excel</button>
 
@@ -46,8 +61,7 @@
   </tr>
 </table>
 
-
-<!-- Firebase SDKs -->
+<!-- ================= SCRIPTS ================= -->
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
