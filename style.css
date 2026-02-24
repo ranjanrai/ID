@@ -1,15 +1,95 @@
-﻿body {
-  font-family: Arial;
+/* ===== GLOBAL ===== */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f4f6fb;
+  margin: 0;
+  padding: 40px;
   text-align: center;
-  margin-top: 50px;
 }
 
-input, button {
-  padding: 8px;
-  margin: 5px;
+h2 {
+  margin-bottom: 20px;
+  color: #2c3e50;
 }
 
-#result {
-  margin-top: 20px;
-  font-size: 16px;
+/* ===== SEARCH BOX ===== */
+#searchInput {
+  width: 320px;
+  padding: 10px 14px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid #bbb;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+#searchInput:focus {
+  border-color: #3498db;
+}
+
+/* ===== TABLE CONTAINER ===== */
+.table-container {
+  width: 95%;
+  margin: auto;
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  overflow-x: auto;
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+/* ===== HEADER ===== */
+thead tr {
+  background: linear-gradient(135deg, #34495e, #2c3e50);
+  color: white;
+}
+
+th {
+  padding: 12px 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+/* ===== BODY ===== */
+td {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* ===== ROW EFFECTS ===== */
+tbody tr:hover {
+  background: #f1f7ff;
+  cursor: pointer;
+}
+
+/* ===== STRIPED ROWS ===== */
+tbody tr:nth-child(even) {
+  background: #fafafa;
+}
+
+/* ===== PIN COLUMN CENTER ===== */
+td:last-child,
+th:last-child {
+  text-align: center;
+  font-weight: 600;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+  table {
+    font-size: 13px;
+  }
 }
