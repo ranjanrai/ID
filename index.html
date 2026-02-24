@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>ID Verification – Student Search</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Student ID Verification System</h2>
+
+<input type="text" id="searchInput" placeholder="Search by student name..." onkeyup="searchTable()">
+
+<table id="studentTable">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Course</th>
+      <th>Roll No</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody">
+    <!-- Data will load here -->
+  </tbody>
+</table>
+
+<script src="student.js"></script>
+</body>
+</html>
