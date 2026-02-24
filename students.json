@@ -1,33 +1,10 @@
 [
   {
-    "id_card_no": "RCPHS/25/BPT/01",
     "name": "AKLIMA KHATUN",
-    "course": "BPT",
-    "session": "2025-2026",
-    "father_name": "YOUSUP ALI FAKIR",
-    "mother_name": "MALEKA KHATUN",
-    "address": "VILLAGE - SATRAKANARA N.C",
-    "post_office": "SATRAKANARA",
-    "police_station": "BAGHBAR",
-    "district": "BARPETA",
-    "state": "Assam",
-    "pin": "781308",
-    "photo": "photos/Aklima Khatun.jpg"
+    "pdf": "pdfs/aklima_khatun_id.pdf"
   },
   {
-    "id_card_no": "RCPHS/25/BPT/02",
     "name": "ALIMA AKTAR TALUKDAR",
-    "course": "BPT",
-    "session": "2025-2026",
-    "father_name": "NIZAM UDDIN TALUKDAR",
-    "mother_name": "MONOWARA BEGUM TALUKDAR",
-    "address": "KALAIN, BRAHMAN GRAM",
-    "post_office": "KALAIN",
-    "police_station": "KALAIN",
-    "district": "CACHAR",
-    "state": "Assam",
-    "pin": "788815",
-    "photo": "photos/Aklima Khatun.jpg"
+    "pdf": "pdfs/alima_aktar_talukdar_id.pdf"
   }
 ]
-
