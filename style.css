@@ -157,3 +157,75 @@ td:nth-child(10) {
 .nav-buttons button:hover {
   background: #1a252f;
 }
+/* ===== DETAILS LAYOUT ===== */
+.details {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 6px;
+}
+
+.details .row {
+  display: grid;
+  grid-template-columns: 180px auto;
+  align-items: start;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.details .row span {
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.details .row span::after {
+  content: " :";
+}
+
+.details .row strong {
+  font-weight: 500;
+  color: #000;
+}
+
+/* ===== SECTION DIVIDER ===== */
+.details hr {
+  border: none;
+  border-top: 1px dashed #ccc;
+  margin: 10px 0;
+}
+
+/* ===== PHOTO CARD ===== */
+.big-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 3px solid #2c3e50;
+  background: #fff;
+}
+
+/* ===== CARD ALIGNMENT ===== */
+.student-card {
+  display: grid;
+  grid-template-columns: 180px auto;
+  gap: 30px;
+  background: #fffdf9;
+  padding: 30px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+/* ===== NAV BUTTONS ===== */
+.nav-buttons button {
+  padding: 10px 22px;
+  font-size: 15px;
+  border-radius: 6px;
+  background: #2c3e50;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background: #1a252f;
+}
