@@ -22,11 +22,12 @@ let students = [];
 
 // Load JSON data
 fetch("students.json")
-  .then(response => response.json())
+  .then(res => res.json())
   .then(data => {
     students = data;
     loadTable(students);
-  });
+  })
+  .catch(err => console.error("Error loading JSON:", err));
 
 // Load table
 function loadTable(data) {
@@ -34,32 +35,32 @@ function loadTable(data) {
   tableBody.innerHTML = "";
 
   data.forEach(s => {
-    const row = `
-      <tr>
-        <td>${s.id_card_no || ""}</td>
-        <td>${s.name || ""}</td>
-        <td>${s.course || ""}</td>
-        <td>${s.session || ""}</td>
-        <td>${s.father_name || ""}</td>
-        <td>${s.mother_name || ""}</td>
-        <td>${s.district || ""}</td>
-        <td>${s.pin || ""}</td>
-      </tr>
+    const row = document.createElement("tr");
+
+    row.innerHTML = `
+      <td>
+        <img src="${s.photo || 'photos/default.png'}" class="student-photo">
+      </td>
+      <td>${s.id_card_no || ""}</td>
+      <td>${s.name || ""}</td>
+      <td>${s.course || ""}</td>
+      <td>${s.session || ""}</td>
+      <td>${s.father_name || ""}</td>
+      <td>${s.mother_name || ""}</td>
+      <td>${s.district || ""}</td>
+      <td>${s.pin || ""}</td>
     `;
-    tableBody.innerHTML += row;
+
+    tableBody.appendChild(row);
   });
 }
 
 // Search by name
 function searchTable() {
-  const value = document
-    .getElementById("searchInput")
-    .value
-    .toLowerCase();
-
+  const value = document.getElementById("searchInput").value.toLowerCase();
   const filtered = students.filter(s =>
     s.name && s.name.toLowerCase().includes(value)
   );
-
   loadTable(filtered);
 }
+
