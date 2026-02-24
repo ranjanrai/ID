@@ -3,6 +3,7 @@
 <head>
   <title>Admin Panel</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
 </head>
 <body>
 
@@ -16,10 +17,14 @@
   <h3>Upload Excel File</h3>
   <input type="file" id="excelFile">
   <button onclick="uploadExcel()">Upload</button>
+<input type="file" id="pdfFile" accept="application/pdf">
+<button onclick="convertPDF()">Convert PDF to JSON</button>
 
+<pre id="output"></pre>
 </div>
 
 <script src="xlsx.full.min.js"></script>
 <script src="admin.js"></script>
 </body>
+
 </html>
