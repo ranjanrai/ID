@@ -19,50 +19,52 @@
   }
 }
 let students = [];
+let currentIndex = 0;
 
-// Load JSON data
 fetch("students.json")
   .then(res => res.json())
   .then(data => {
     students = data;
-    loadTable(students);
-  })
-  .catch(err => console.error("Error loading JSON:", err));
-
-// Load table
-function loadTable(data) {
-  const tableBody = document.getElementById("tableBody");
-  tableBody.innerHTML = "";
-
-  data.forEach(s => {
-    const row = document.createElement("tr");
-
-    row.innerHTML = `
-  <td><img src="${s.photo || 'photos/default.png'}" class="student-photo"></td>
-  <td>${s.id_card_no || ""}</td>
-  <td>${s.name || ""}</td>
-  <td>${s.course || ""}</td>
-  <td>${s.session || ""}</td>
-  <td>${s.father_name || ""}</td>
-  <td>${s.mother_name || ""}</td>
-  <td>${s.address || ""}</td>
-  <td>${s.post_office || ""}</td>
-  <td>${s.police_station || ""}</td>
-  <td>${s.district || ""}</td>
-  <td>${s.pin || ""}</td>
-`;
-
-    tableBody.appendChild(row);
+    showStudent(0);
   });
+
+function showStudent(index) {
+  if (index < 0 || index >= students.length) return;
+
+  const s = students[index];
+  currentIndex = index;
+
+  document.getElementById("photo").src = s.photo || "photos/default.png";
+  document.getElementById("id_card_no").textContent = s.id_card_no || "";
+  document.getElementById("name").textContent = s.name || "";
+  document.getElementById("course").textContent = s.course || "";
+  document.getElementById("session").textContent = s.session || "";
+  document.getElementById("father_name").textContent = s.father_name || "";
+  document.getElementById("mother_name").textContent = s.mother_name || "";
+  document.getElementById("address").textContent = s.address || "";
+  document.getElementById("post_office").textContent = s.post_office || "";
+  document.getElementById("police_station").textContent = s.police_station || "";
+  document.getElementById("district").textContent = s.district || "";
+  document.getElementById("pin").textContent = s.pin || "";
 }
 
-// Search by name
+function nextStudent() {
+  if (currentIndex < students.length - 1) {
+    showStudent(currentIndex + 1);
+  }
+}
+
+function prevStudent() {
+  if (currentIndex > 0) {
+    showStudent(currentIndex - 1);
+  }
+}
+
+// Search and jump to student
 function searchTable() {
   const value = document.getElementById("searchInput").value.toLowerCase();
-  const filtered = students.filter(s =>
+  const index = students.findIndex(s =>
     s.name && s.name.toLowerCase().includes(value)
   );
-  loadTable(filtered);
+  if (index !== -1) showStudent(index);
 }
-
-
