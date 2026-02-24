@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
   <title>ID Verification – Student Search</title>
@@ -8,15 +8,24 @@
 
 <h2>Student ID Verification System</h2>
 
-<input type="text" id="searchInput" placeholder="Search by student name..." onkeyup="searchTable()">
+<input
+  type="text"
+  id="searchInput"
+  placeholder="Search by student name..."
+  onkeyup="searchTable()"
+>
 
 <table id="studentTable">
   <thead>
     <tr>
+      <th>ID Card No</th>
       <th>Name</th>
       <th>Course</th>
-      <th>Roll No</th>
-      <th>Year</th>
+      <th>Session</th>
+      <th>Father Name</th>
+      <th>Mother Name</th>
+      <th>District</th>
+      <th>PIN</th>
     </tr>
   </thead>
   <tbody id="tableBody">
