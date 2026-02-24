@@ -12,6 +12,7 @@
     "district": "BARPETA",
     "state": "Assam",
     "pin": "781308"
+    "photo": "photos/aklima_khatun.jpg"
   },
   {
     "id_card_no": "RCPHS/25/BPT/02",
@@ -26,5 +27,7 @@
     "district": "CACHAR",
     "state": "Assam",
     "pin": "788815"
+    "photo": "photos/aklima_khatun.jpg"
   }
 ]
+
