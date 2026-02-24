@@ -25,4 +25,41 @@ function uploadExcel() {
   };
 
   reader.readAsArrayBuffer(file);
+
+}
+
+async function convertPDF() {
+  const file = document.getElementById("pdfFile").files[0];
+  const arrayBuffer = await file.arrayBuffer();
+
+  const pdf = await pdfjsLib.getDocument({ data: arrayBuffer }).promise;
+  let students = [];
+
+  for (let i = 1; i <= pdf.numPages; i++) {
+    const page = await pdf.getPage(i);
+    const content = await page.getTextContent();
+    const text = content.items.map(item => item.str).join(" ");
+
+    // SIMPLE EXTRACTION LOGIC (works for your PDF format)
+    if (text.includes("Course :")) {
+      const student = {
+        name: extract(text, /([A-Z ]+)\s+Course/),
+        course: extract(text, /Course\s:\s([A-Z]+)/),
+        session: extract(text, /Session:\s([\d\-]+)/),
+        father_name: extract(text, /F\. Name\s:\s([A-Z ]+)/),
+        mother_name: extract(text, /M\. Name\s:\s([A-Z ]+)/),
+        address: extract(text, /Address\s:\s([^P]+)/),
+        pin: extract(text, /Pin-\s(\d+)/)
+      };
+      students.push(student);
+    }
+  }
+
+  document.getElementById("output").textContent =
+    JSON.stringify(students, null, 2);
+}
+
+function extract(text, regex) {
+  const match = text.match(regex);
+  return match ? match[1].trim() : "";
 }
