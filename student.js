@@ -20,34 +20,46 @@
 }
 let students = [];
 
+// Load JSON data
 fetch("students.json")
-  .then(res => res.json())
+  .then(response => response.json())
   .then(data => {
     students = data;
-    loadTable(data);
+    loadTable(students);
   });
 
+// Load table
 function loadTable(data) {
   const tableBody = document.getElementById("tableBody");
   tableBody.innerHTML = "";
 
-  data.forEach(stu => {
+  data.forEach(s => {
     const row = `
       <tr>
-        <td>${stu.name}</td>
-        <td>${stu.course}</td>
-        <td>${stu.roll}</td>
-        <td>${stu.year}</td>
+        <td>${s.id_card_no || ""}</td>
+        <td>${s.name || ""}</td>
+        <td>${s.course || ""}</td>
+        <td>${s.session || ""}</td>
+        <td>${s.father_name || ""}</td>
+        <td>${s.mother_name || ""}</td>
+        <td>${s.district || ""}</td>
+        <td>${s.pin || ""}</td>
       </tr>
     `;
     tableBody.innerHTML += row;
   });
 }
 
+// Search by name
 function searchTable() {
-  const input = document.getElementById("searchInput").value.toLowerCase();
+  const value = document
+    .getElementById("searchInput")
+    .value
+    .toLowerCase();
+
   const filtered = students.filter(s =>
-    s.name.toLowerCase().includes(input)
+    s.name && s.name.toLowerCase().includes(value)
   );
+
   loadTable(filtered);
 }
