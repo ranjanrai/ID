@@ -63,3 +63,35 @@ function extract(text, regex) {
   const match = text.match(regex);
   return match ? match[1].trim() : "";
 }
+
+function exportJSON() {
+
+  // 🔹 Your JSON data (example – replace with real data)
+  const students = [
+    {
+      "id_card_no": "RCPHS/25/BPT/01",
+      "name": "AKLIMA KHATUN",
+      "course": "BPT",
+      "session": "2025-2026",
+      "father_name": "YOUSUP ALI FAKIR",
+      "mother_name": "MALEKA KHATUN",
+      "district": "BARPETA",
+      "pin": "781308"
+    }
+  ];
+
+  // 🔹 Convert JSON to string
+  const jsonStr = JSON.stringify(students, null, 2);
+
+  // 🔹 Create downloadable file
+  const blob = new Blob([jsonStr], { type: "application/json" });
+  const url = URL.createObjectURL(blob);
+
+  // 🔹 Trigger download
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "students.json";
+  a.click();
+
+  URL.revokeObjectURL(url);
+}
