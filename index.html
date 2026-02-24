@@ -15,31 +15,37 @@
   onkeyup="searchTable()"
 >
 
-<div class="table-container">
- <table id="studentTable">
-  <thead>
-    <tr>
-      <th>Photo</th>
-      <th>ID Card No</th>
-      <th>Name</th>
-      <th>Course</th>
-      <th>Session</th>
-      <th>Father Name</th>
-      <th>Mother Name</th>
-      <th>Address</th>
-      <th>Post Office</th>
-      <th>Police Station</th>
-      <th>District</th>
-      <th>PIN</th>
-    </tr>
-  </thead>
-  <tbody id="tableBody"></tbody>
-</table>
+<div class="card-container">
+
+  <div class="student-card">
+    <img id="photo" class="big-photo">
+
+    <div class="details">
+      <p><b>ID Card No:</b> <span id="id_card_no"></span></p>
+      <p><b>Name:</b> <span id="name"></span></p>
+      <p><b>Course:</b> <span id="course"></span></p>
+      <p><b>Session:</b> <span id="session"></span></p>
+      <p><b>Father Name:</b> <span id="father_name"></span></p>
+      <p><b>Mother Name:</b> <span id="mother_name"></span></p>
+      <p><b>Address:</b> <span id="address"></span></p>
+      <p><b>Post Office:</b> <span id="post_office"></span></p>
+      <p><b>Police Station:</b> <span id="police_station"></span></p>
+      <p><b>District:</b> <span id="district"></span></p>
+      <p><b>PIN:</b> <span id="pin"></span></p>
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button onclick="prevStudent()">⬅ Previous</button>
+    <button onclick="nextStudent()">Next ➡</button>
+  </div>
+
 </div>
 
 <script src="student.js"></script>
 </body>
 </html>
+
 
 
 
