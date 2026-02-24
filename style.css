@@ -100,3 +100,9 @@ th:last-child {
   object-fit: cover;
   border: 2px solid #3498db;
 }
+td:nth-child(8),
+td:nth-child(9),
+td:nth-child(10) {
+  min-width: 180px;
+  white-space: normal;
+}
