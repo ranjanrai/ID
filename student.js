@@ -38,18 +38,19 @@ function loadTable(data) {
     const row = document.createElement("tr");
 
     row.innerHTML = `
-      <td>
-        <img src="${s.photo || 'photos/default.png'}" class="student-photo">
-      </td>
-      <td>${s.id_card_no || ""}</td>
-      <td>${s.name || ""}</td>
-      <td>${s.course || ""}</td>
-      <td>${s.session || ""}</td>
-      <td>${s.father_name || ""}</td>
-      <td>${s.mother_name || ""}</td>
-      <td>${s.district || ""}</td>
-      <td>${s.pin || ""}</td>
-    `;
+  <td><img src="${s.photo || 'photos/default.png'}" class="student-photo"></td>
+  <td>${s.id_card_no || ""}</td>
+  <td>${s.name || ""}</td>
+  <td>${s.course || ""}</td>
+  <td>${s.session || ""}</td>
+  <td>${s.father_name || ""}</td>
+  <td>${s.mother_name || ""}</td>
+  <td>${s.address || ""}</td>
+  <td>${s.post_office || ""}</td>
+  <td>${s.police_station || ""}</td>
+  <td>${s.district || ""}</td>
+  <td>${s.pin || ""}</td>
+`;
 
     tableBody.appendChild(row);
   });
@@ -63,4 +64,5 @@ function searchTable() {
   );
   loadTable(filtered);
 }
+
 
