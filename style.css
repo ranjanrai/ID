@@ -106,3 +106,54 @@ td:nth-child(10) {
   min-width: 180px;
   white-space: normal;
 }
+.card-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.student-card {
+  display: flex;
+  gap: 30px;
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  align-items: flex-start;
+}
+
+.big-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 3px solid #2c3e50;
+}
+
+.details p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.details b {
+  color: #2c3e50;
+}
+
+.nav-buttons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #2c3e50;
+  color: white;
+}
+
+.nav-buttons button:hover {
+  background: #1a252f;
+}
