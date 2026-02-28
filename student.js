@@ -47,6 +47,8 @@ function showStudent(index) {
   document.getElementById("district").textContent = s.district || "";
   document.getElementById("state").textContent = s.state || "";
   document.getElementById("pin").textContent = s.pin || "";
+  document.getElementById("counter").textContent =
+  `Student ${index + 1} of ${students.length}`;
 }
 
 function nextStudent() {
@@ -69,4 +71,5 @@ function searchTable() {
   );
   if (index !== -1) showStudent(index);
 }
+
 
