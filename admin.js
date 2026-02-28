@@ -1,4 +1,7 @@
-﻿const PASSWORD = "admin123";   // Change password here
+let studentsData = [];
+let currentIndex = 0;
+
+const PASSWORD = "admin123";   // Change password here
 
 function login() {
   const pass = document.getElementById("adminPass").value;
@@ -12,20 +15,33 @@ function login() {
 
 function uploadExcel() {
   const file = document.getElementById("excelFile").files[0];
+  if (!file) {
+    alert("Please select Excel file");
+    return;
+  }
+
   const reader = new FileReader();
 
   reader.onload = function (e) {
     const data = new Uint8Array(e.target.result);
     const workbook = XLSX.read(data, { type: "array" });
     const sheet = workbook.Sheets[workbook.SheetNames[0]];
-    const json = XLSX.utils.sheet_to_json(sheet);
 
-    console.log(json);
-    alert("Excel converted to JSON. Check console.");
+    // Convert Excel to JSON
+    studentsData = XLSX.utils.sheet_to_json(sheet, { defval: null });
+
+    if (studentsData.length === 0) {
+      alert("No data found in Excel");
+      return;
+    }
+
+    populateDropdown();      // Fill dropdown
+    loadStudentToForm(0);    // Load first student in form
+
+    alert("Excel Loaded Successfully");
   };
 
   reader.readAsArrayBuffer(file);
-
 }
 
 async function convertPDF() {
@@ -173,17 +189,32 @@ function populateDropdown() {
   loadStudentToForm();
 }
 
-function loadStudentToForm() {
-  const index = document.getElementById("studentSelect").value;
+function loadStudentToForm(indexFromTable = null) {
+  const select = document.getElementById("studentSelect");
+
+  if (indexFromTable !== null) {
+    select.value = indexFromTable;
+  }
+
+  const index = select.value;
   currentIndex = index;
 
   const s = studentsData[index];
+  if (!s) return;
 
-  for (let key in s) {
-    if (document.getElementById(key)) {
-      document.getElementById(key).value = s[key] || "";
-    }
-  }
+  document.getElementById("id_card_no").value = s.id_card_no || "";
+  document.getElementById("name").value = s.name || "";
+  document.getElementById("course").value = s.course || "";
+  document.getElementById("session").value = s.session || "";
+  document.getElementById("father_name").value = s.father_name || "";
+  document.getElementById("mother_name").value = s.mother_name || "";
+  document.getElementById("address").value = s.address || "";
+  document.getElementById("post_office").value = s.post_office || "";
+  document.getElementById("police_station").value = s.police_station || "";
+  document.getElementById("district").value = s.district || "";
+  document.getElementById("state").value = s.state || "";
+  document.getElementById("pin").value = s.pin || "";
+  document.getElementById("photo").value = s.photo || "";
 }
 
 function updateStudent() {
@@ -212,3 +243,4 @@ function downloadJSON() {
 
   URL.revokeObjectURL(url);
 }
+
