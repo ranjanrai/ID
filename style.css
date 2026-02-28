@@ -207,25 +207,33 @@ td:nth-child(10) {
 /* ===== CARD ALIGNMENT ===== */
 .student-card {
   display: grid;
-  grid-template-columns: 180px auto;
-  gap: 30px;
-  background: #fffdf9;
-  padding: 30px;
-  border-radius: 14px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+  grid-template-columns: 200px auto;
+  gap: 40px;
+  background: linear-gradient(145deg, #ffffff, #f2f2f2);
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+.student-card:hover {
+  transform: translateY(-4px);
 }
 
 /* ===== NAV BUTTONS ===== */
 .nav-buttons button {
-  padding: 10px 22px;
-  font-size: 15px;
-  border-radius: 6px;
-  background: #2c3e50;
-  color: #fff;
+  padding: 12px 28px;
+  font-size: 16px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #2c3e50, #34495e);
+  color: white;
   border: none;
   cursor: pointer;
+  transition: 0.3s;
 }
 
 .nav-buttons button:hover {
-  background: #1a252f;
+  background: linear-gradient(135deg, #1a252f, #2c3e50);
+  transform: scale(1.05);
 }
+
