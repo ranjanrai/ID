@@ -45,6 +45,7 @@ function showStudent(index) {
   document.getElementById("post_office").textContent = s.post_office || "";
   document.getElementById("police_station").textContent = s.police_station || "";
   document.getElementById("district").textContent = s.district || "";
+  document.getElementById("state").textContent = s.state || "";
   document.getElementById("pin").textContent = s.pin || "";
 }
 
@@ -68,3 +69,4 @@ function searchTable() {
   );
   if (index !== -1) showStudent(index);
 }
+
