@@ -142,3 +142,73 @@ function downloadUpdatedJSON() {
     alert("Invalid JSON Format. Please check!");
   }
 }
+
+let studentsData = [];
+let currentIndex = 0;
+
+function loadJSON() {
+  const file = document.getElementById("jsonFile").files[0];
+  const reader = new FileReader();
+
+  reader.onload = function (e) {
+    studentsData = JSON.parse(e.target.result);
+    populateDropdown();
+    alert("JSON Loaded Successfully");
+  };
+
+  reader.readAsText(file);
+}
+
+function populateDropdown() {
+  const select = document.getElementById("studentSelect");
+  select.innerHTML = "";
+
+  studentsData.forEach((student, index) => {
+    const option = document.createElement("option");
+    option.value = index;
+    option.textContent = student.name + " (" + student.id_card_no + ")";
+    select.appendChild(option);
+  });
+
+  loadStudentToForm();
+}
+
+function loadStudentToForm() {
+  const index = document.getElementById("studentSelect").value;
+  currentIndex = index;
+
+  const s = studentsData[index];
+
+  for (let key in s) {
+    if (document.getElementById(key)) {
+      document.getElementById(key).value = s[key] || "";
+    }
+  }
+}
+
+function updateStudent() {
+  const s = studentsData[currentIndex];
+
+  for (let key in s) {
+    if (document.getElementById(key)) {
+      s[key] = document.getElementById(key).value || null;
+    }
+  }
+
+  alert("Student Updated Successfully");
+}
+
+function downloadJSON() {
+  const blob = new Blob(
+    [JSON.stringify(studentsData, null, 2)],
+    { type: "application/json" }
+  );
+
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement("a");
+  a.href = url;
+  a.download = "students.json";
+  a.click();
+
+  URL.revokeObjectURL(url);
+}
