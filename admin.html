@@ -26,6 +26,15 @@
 
 <h3>Edit Student</h3>
 
+  <h4>Search Student</h4>
+<input type="text" id="adminSearch" placeholder="Search by Name or ID" onkeyup="searchStudent()">
+
+<br><br>
+
+<button onclick="prevStudent()">⬅ Previous</button>
+<button onclick="nextStudent()">Next ➡</button>
+
+<br><br>
 <select id="studentSelect" onchange="loadStudentToForm()"></select>
 
 <div class="form-grid">
@@ -68,6 +77,7 @@
 </body>
 
 </html>
+
 
 
 
