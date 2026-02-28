@@ -95,3 +95,50 @@ function exportJSON() {
 
   URL.revokeObjectURL(url);
 }
+let currentJSON = [];
+
+// Load existing students.json file
+async function loadJSON() {
+  const file = document.getElementById("jsonFile").files[0];
+  const reader = new FileReader();
+
+  reader.onload = function (e) {
+    try {
+      currentJSON = JSON.parse(e.target.result);
+      document.getElementById("jsonEditor").value =
+        JSON.stringify(currentJSON, null, 2);
+      alert("JSON Loaded Successfully");
+    } catch (error) {
+      alert("Invalid JSON File!");
+    }
+  };
+
+  reader.readAsText(file);
+}
+
+// Download edited JSON
+function downloadUpdatedJSON() {
+  try {
+    const updatedData = JSON.parse(
+      document.getElementById("jsonEditor").value
+    );
+
+    const blob = new Blob(
+      [JSON.stringify(updatedData, null, 2)],
+      { type: "application/json" }
+    );
+
+    const url = URL.createObjectURL(blob);
+
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "students.json";
+    a.click();
+
+    URL.revokeObjectURL(url);
+
+    alert("Updated JSON Downloaded Successfully");
+  } catch (error) {
+    alert("Invalid JSON Format. Please check!");
+  }
+}
