@@ -13,7 +13,15 @@
 <button onclick="login()">Login</button>
 
 <div id="adminSection" style="display:none">
+<h3>Upload Students JSON</h3>
+<input type="file" id="jsonFile" accept=".json">
+<button onclick="loadJSON()">Load JSON</button>
 
+<h3>Edit JSON Data</h3>
+<textarea id="jsonEditor" style="width:100%;height:300px;"></textarea>
+
+<br><br>
+<button onclick="downloadUpdatedJSON()">Download Updated JSON</button>
   <h3>Upload Excel File</h3>
   <input type="file" id="excelFile">
   <button onclick="uploadExcel()">Upload</button>
@@ -28,4 +36,5 @@
 </body>
 
 </html>
+
 
