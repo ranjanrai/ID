@@ -217,3 +217,48 @@ function downloadJSON() {
 
   URL.revokeObjectURL(url);
 }
+
+/* ===========================
+   SEARCH FUNCTION
+=========================== */
+
+function searchStudent() {
+  const value = document.getElementById("adminSearch").value.toLowerCase();
+
+  const index = studentsData.findIndex(s =>
+    (s.name && s.name.toLowerCase().includes(value)) ||
+    (s.id_card_no && s.id_card_no.toLowerCase().includes(value))
+  );
+
+  if (index !== -1) {
+    loadStudentToForm(index);
+  }
+}
+
+/* ===========================
+   NAVIGATION BUTTONS
+=========================== */
+
+function nextStudent() {
+  if (studentsData.length === 0) return;
+
+  currentIndex++;
+
+  if (currentIndex >= studentsData.length) {
+    currentIndex = studentsData.length - 1;
+  }
+
+  loadStudentToForm(currentIndex);
+}
+
+function prevStudent() {
+  if (studentsData.length === 0) return;
+
+  currentIndex--;
+
+  if (currentIndex < 0) {
+    currentIndex = 0;
+  }
+
+  loadStudentToForm(currentIndex);
+}
