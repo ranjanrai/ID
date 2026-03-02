@@ -1,7 +1,7 @@
 [
   {
     "id_card_no": "RCPHS/25/BPT/01",
-    "name": "AKLIMA KHATUN",
+    "name": "AKLIMA KHATUN ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "YOUSUP ALI FAKIR",
@@ -12,11 +12,12 @@
     "district": "BARPETA ",
     "state": "ASSAM",
     "pin": "781308",
-    "photo": "photos/Aklima Khatun.jpg"
+    "photo": "photos/AKLIMA KHATUN",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/02",
-    "name": "ALIMA AKTAR TALUKDAR",
+    "name": "ALIMA AKTAR TALUKDAR ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "NIZAM UDDIN TALUKDAR ",
@@ -27,7 +28,8 @@
     "district": "CACHAR ",
     "state": "ASSAM",
     "pin": "788815",
-    "photo": "photos/Alima Aktar Talukdar.jpg"
+    "photo": "photos/ALIMA AKTART ALUKDAR",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/03",
@@ -42,11 +44,12 @@
     "district": "GOALPARA",
     "state": "ASSAM",
     "pin": "783132",
-    "photo": "photos/AMINUR TALUKDAR.jpg"
+    "photo": "photos/AMINUR TALUKDAR",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/04",
-    "name": "ANUSHA BEGUM",
+    "name": "ANUSHA BEGUM ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "ALAUDDIN SHEIKH ",
@@ -57,11 +60,12 @@
     "district": "DHUBRI ",
     "state": "ASSAM ",
     "pin": "783345",
-    "photo": "photos/Anusha Begum.png"
+    "photo": "photos/ANUSHA BEGUM",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/05",
-    "name": "ASHRAFA HANnull",
+    "name": "ASHRAFA HANNAN",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": null,
@@ -71,8 +75,9 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": "photos/Ashraful Alom.jpg"
+    "pin": null,
+    "photo": "photos/ASHRAFAHANNAN",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/06",
@@ -87,7 +92,8 @@
     "district": "SOUTH SALMARA MANKACHAR ",
     "state": "ASSAM",
     "pin": "783135",
-    "photo": "photos/Babidul Islam.jpg"
+    "photo": "photos/ASHRAFUL ALOM",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/07",
@@ -102,7 +108,8 @@
     "district": "BAKSA ",
     "state": "ASSAM ",
     "pin": "781315",
-    "photo": "photos/Habibul Haque.jpg"
+    "photo": "photos/BABIDUL ISLAM",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/08",
@@ -116,8 +123,9 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": "photos/IFTIKAR HUSSAIN.jpg"
+    "pin": null,
+    "photo": "photos/DEEP JYOTI GOGOI",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/09",
@@ -131,12 +139,13 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": "photos/JEHERUL ISLAM.jpg"
+    "pin": null,
+    "photo": "photos/ELIZA PARBIN",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/10",
-    "name": "HABIBUL HAQUE",
+    "name": "HABIBUL HAQUE ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "RAHAM ALI",
@@ -147,11 +156,12 @@
     "district": "NALBARI",
     "state": "ASSAM",
     "pin": "781126",
-    "photo": "photos/Jerifa Ahmed.png"
+    "photo": "photos/HABIBUL HAQUE",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/11",
-    "name": "IFTIKAR HUSSAIN",
+    "name": "IFTIKAR HUSSAIN ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "AKKIL ALI",
@@ -162,7 +172,8 @@
     "district": "DARRANG",
     "state": "ASSAM",
     "pin": "784144",
-    "photo": "photos/JILIMA BEGUM.jpg"
+    "photo": "photos/IFTIKAR HUSSAIN",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/12",
@@ -176,23 +187,25 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": "photos/KABERUN NEHAR.png"
+    "pin": null,
+    "photo": "photos/JAHANARA KHATUN",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/13",
-    "name": "JASMINE KHALEPA CHOWDHURY",
+    "name": "JASMINE KHALEDA CHOWDHURY",
     "course": "BPT",
     "session": "2025-2026",
-    "father_name": null,
-    "mother_name": null,
-    "address": null,
-    "post_office": null,
-    "police_station": null,
-    "district": null,
-    "state": null,
-    "pin": "",
-    "photo": "photos/Majidul Islam.jpg"
+    "father_name": "SHAHADAT HUSSAIN CHOWDHURY",
+    "mother_name": "KARIMA BEGUM CHOWDHURY",
+    "address": "RONGPUR",
+    "post_office": "RONGPUR",
+    "police_station": "SILCHAR",
+    "district": "CACHAR",
+    "state": "ASSAM",
+    "pin": "788009",
+    "photo": "photos/JASMINE KHALEDA CHOWDHURY",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/14",
@@ -207,11 +220,12 @@
     "district": "KAMRUP (R)",
     "state": "ASSAM",
     "pin": "781102",
-    "photo": "photos/MAMINA KHATUN.png"
+    "photo": "photos/JEHERUL ISLAM",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/15",
-    "name": "JERIFA AHMED",
+    "name": "JERIFA AHMED ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "AJIR ALI",
@@ -222,7 +236,8 @@
     "district": "BAKSA",
     "state": "ASSAM ",
     "pin": "781346",
-    "photo": "photos/Md Soleman Sheikh.jpg"
+    "photo": "photos/JERIFA AHMED",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/16",
@@ -236,12 +251,13 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": "photos/MIRAJUL ISLAM.jpg"
+    "pin": null,
+    "photo": "photos/JESMIN MEHBUBA RAHMAN",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/17",
-    "name": "JILIMA BEGUM",
+    "name": "JILIMA BEGUM ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "FAZAL ALI ",
@@ -252,7 +268,8 @@
     "district": "KAMRUP ",
     "state": "ASSAM ",
     "pin": "781102",
-    "photo": "photos/MOFIDUL ISLAM.jpg"
+    "photo": "photos/JILIMA BEGUM",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/18",
@@ -267,7 +284,8 @@
     "district": "BARPETA",
     "state": "ASSAM",
     "pin": "781308",
-    "photo": "photos/MUZZAMIL HOQUE.png"
+    "photo": "photos/KABERUN NEHAR",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/19",
@@ -281,23 +299,25 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": "photos/NAJRANA TASNIM.jpg"
+    "pin": null,
+    "photo": "photos/KULSUMA KHATUN",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/20",
     "name": "LUTFUR RAHMAN",
     "course": "BPT",
     "session": "2025-2026",
-    "father_name": null,
-    "mother_name": null,
-    "address": null,
-    "post_office": null,
-    "police_station": null,
-    "district": null,
-    "state": null,
-    "pin": "",
-    "photo": "photos/Prapti Parna Das.png"
+    "father_name": "MAKIBAR RAHMAN",
+    "mother_name": "MAFIJUN BEGUM",
+    "address": "MANGALDAI",
+    "post_office": "RANGAMATI",
+    "police_station": "MANGALDAI",
+    "district": "DARRANG",
+    "state": "ASSAM",
+    "pin": 784529,
+    "photo": "photos/LUTFUR RAHMAN",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/21",
@@ -312,11 +332,12 @@
     "district": "BARPETA ",
     "state": "ASSAM",
     "pin": "781321",
-    "photo": "photos/RAHIMA KHATUN.png"
+    "photo": "photos/MAJIDUL ISLAM",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/22",
-    "name": "MAMINA KHATUN",
+    "name": "MAMINA KHATUN ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "MAFIZ KHAN ",
@@ -327,7 +348,8 @@
     "district": "BARPETA ",
     "state": "ASSAM",
     "pin": "781314",
-    "photo": "photos/RAHUL ALI.png"
+    "photo": "photos/MAMINA KHATUN",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/23",
@@ -341,8 +363,9 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": "photos/Rajibul.png"
+    "pin": null,
+    "photo": "photos/MANASH JYOTI MAHANTA NATH",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/24",
@@ -356,12 +379,13 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": "photos/RAKIBUL ISLAM.png"
+    "pin": null,
+    "photo": "photos/MASUMA AKTAR",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/25",
-    "name": "MD SOLEMAN SHEIKH",
+    "name": "MD SOLEMAN SHEIKH ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "ABDUL AWAL SHEIKH ",
@@ -372,11 +396,12 @@
     "district": "SOUTH SALMARA MANKACHAR ",
     "state": "ASSAM",
     "pin": "783135",
-    "photo": "photos/RAMJAN ALI.jpg"
+    "photo": "photos/MD SOLEMAN SHEIKH",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/26",
-    "name": "MIRAJUL ISLAM",
+    "name": "MIRAJUL ISLAM ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "AZAD HUSSAIN ",
@@ -387,11 +412,12 @@
     "district": "GOALPARA ",
     "state": "ASSAM ",
     "pin": "783130",
-    "photo": "photos/Sanowar Hussain.jpg"
+    "photo": "photos/MIRAJUL ISLAM",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/27",
-    "name": "MIRAZUL RAHMAN",
+    "name": "MIRAZUL RAHMAN ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "LUTFAR RAHMAN ",
@@ -402,7 +428,8 @@
     "district": "BARPETA ",
     "state": "ASSAM",
     "pin": "781308",
-    "photo": "photos/shahanur Dewan.jpg"
+    "photo": "photos/MIRAZUL RAHMAN",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/28",
@@ -417,7 +444,8 @@
     "district": "KOKRAJHAR ",
     "state": "ASSAM",
     "pin": "783337",
-    "photo": "photos/Shahima aktar.png"
+    "photo": "photos/MOFIDUL ISLAM",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/29",
@@ -431,8 +459,9 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": "photos/Shakil Ahmed.jpg"
+    "pin": null,
+    "photo": "photos/MUM MEGU",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/30",
@@ -446,12 +475,13 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": "photos/Umme Musfika Ahmed.jpg"
+    "pin": null,
+    "photo": "photos/MUSFIKA AHMED",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/31",
-    "name": "MUZZAMIL HOQUE",
+    "name": "MUZZAMIL HOQUE ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "SOLEMAN ALI",
@@ -462,7 +492,8 @@
     "district": "BAKSA",
     "state": "ASSAM",
     "pin": "781315",
-    "photo": "photos/Wasim Firdus Choudhuri.jpg"
+    "photo": "photos/MUZZAMIL HOQUE",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/32",
@@ -477,7 +508,8 @@
     "district": "KAMRUP",
     "state": "ASSAM",
     "pin": "781382",
-    "photo": "photos/Zakariya Mondal.png"
+    "photo": "photos/NAJRANA TASNIM",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/33",
@@ -491,8 +523,9 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": null
+    "pin": null,
+    "photo": "photos/NAZRIN ALAM",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/34",
@@ -506,8 +539,9 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": null
+    "pin": null,
+    "photo": "photos/PARTHA PRATIM DAS",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/35",
@@ -521,12 +555,13 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": null
+    "pin": null,
+    "photo": "photos/PARVES MOSHAROF",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/36",
-    "name": "PRAPTI PARNA DAS",
+    "id_card_no": "RCPHS/25/BPT/37",
+    "name": "PRAPTI PARNA DAS ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "UTPAL CHANDRA DAS",
@@ -537,10 +572,11 @@
     "district": "KAMRUP METRO",
     "state": "ASSAM",
     "pin": "781009",
-    "photo": null
+    "photo": "photos/PRAPTI PARNA DAS",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/37",
+    "id_card_no": "RCPHS/25/BPT/38",
     "name": "RAHIMA KHATUN",
     "course": "BPT",
     "session": "2025-2026",
@@ -552,11 +588,12 @@
     "district": "BARPETA ",
     "state": "ASSAM",
     "pin": "781352",
-    "photo": null
+    "photo": "photos/RAHIMA KHATUN",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/38",
-    "name": "RAHUL ALI",
+    "id_card_no": "RCPHS/25/BPT/39",
+    "name": "RAHUL ALI ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "ABED ALI",
@@ -567,10 +604,11 @@
     "district": "BAKSA",
     "state": "ASSAM ",
     "pin": "781346",
-    "photo": null
+    "photo": "photos/RAHUL ALI",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/39",
+    "id_card_no": "RCPHS/25/BPT/40",
     "name": "Rajibul",
     "course": "BPT",
     "session": 2026,
@@ -581,12 +619,13 @@
     "police_station": "Baghbar",
     "district": "Barpeta",
     "state": "Assam",
-    "pin": "781308",
-    "photo": null
+    "pin": 781308,
+    "photo": "photos/Rajibul",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/40",
-    "name": "RAKIBUL ISLAM",
+    "id_card_no": "RCPHS/25/BPT/41",
+    "name": "RAKIBUL ISLAM ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "MOZIBAR RAHMAN ",
@@ -597,10 +636,11 @@
     "district": "DHUBRI ",
     "state": "ASSAM ",
     "pin": "783323",
-    "photo": null
+    "photo": "photos/RAKIBULI SLAM",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/41",
+    "id_card_no": "RCPHS/25/BPT/42",
     "name": "RAMJAN ALI",
     "course": "BPT",
     "session": "2025-2026",
@@ -612,10 +652,11 @@
     "district": "KAMRUP ",
     "state": "ASSAM",
     "pin": "781127",
-    "photo": null
+    "photo": "photos/RAMJAN ALI",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/42",
+    "id_card_no": "RCPHS/25/BPT/43",
     "name": "RESMA BEAUTY",
     "course": "BPT",
     "session": "2025-2026",
@@ -626,26 +667,28 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": null
-  },
-  {
-    "id_card_no": "RCPHS/25/BPT/43",
-    "name": "ROSAN ACHARYA",
-    "course": "BPT",
-    "session": "2025-2026",
-    "father_name": null,
-    "mother_name": null,
-    "address": null,
-    "post_office": null,
-    "police_station": null,
-    "district": null,
-    "state": null,
-    "pin": "",
-    "photo": null
+    "pin": null,
+    "photo": "photos/RESMA BEAUTY",
+    "__EMPTY": null
   },
   {
     "id_card_no": "RCPHS/25/BPT/44",
+    "name": "ROSAN ACHARYA",
+    "course": "BPT",
+    "session": "2025-26",
+    "father_name": "KRISHNA ACHARYA",
+    "mother_name": "CHAMPA DEVI",
+    "address": "GAMIRI, NEPALI PARHAR,",
+    "post_office": "GAMIRI",
+    "police_station": "HELEM",
+    "district": "BISWANATH",
+    "state": "ASSAM",
+    "pin": 784172,
+    "photo": "photos/ROSAN ACHARYA",
+    "__EMPTY": null
+  },
+  {
+    "id_card_no": "RCPHS/25/BPT/45",
     "name": "SANOWAR HUSSAIN",
     "course": "BPT",
     "session": "2025-2026",
@@ -657,10 +700,11 @@
     "district": "BONGAIGAON",
     "state": "ASSAM",
     "pin": "783384",
-    "photo": null
+    "photo": "photos/SANOWAR HUSSAIN",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/45",
+    "id_card_no": "RCPHS/25/BPT/47",
     "name": "SHAHANUR DEWAN",
     "course": "BPT",
     "session": "2025-2026",
@@ -672,10 +716,11 @@
     "district": "BARPETA",
     "state": "ASSAM",
     "pin": "781352",
-    "photo": null
+    "photo": "photos/SHAHANUR DEWAN",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/46",
+    "id_card_no": "RCPHS/25/BPT/48",
     "name": "SHAHIMA AKTAR",
     "course": "BPT",
     "session": "2025-2026",
@@ -687,11 +732,12 @@
     "district": "BARPETA",
     "state": "ASSAM",
     "pin": "781308",
-    "photo": null
+    "photo": "photos/SHAHIMA AKTAR",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/47",
-    "name": "SHAKIL AHMED",
+    "id_card_no": "RCPHS/25/BPT/49",
+    "name": "SHAKIL AHMED ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "SHIRAJ ALI",
@@ -702,10 +748,11 @@
     "district": "BARPETA ",
     "state": "ASSAM",
     "pin": "781313",
-    "photo": null
+    "photo": "photos/SHAKIL AHMED",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/48",
+    "id_card_no": "RCPHS/25/BPT/50",
     "name": "SHANIDUL ISLAM",
     "course": "BPT",
     "session": "2025-2026",
@@ -716,11 +763,12 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": null
+    "pin": null,
+    "photo": "photos/SHANIDUL ISLAM",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/49",
+    "id_card_no": "RCPHS/25/BPT/51",
     "name": "SILIMA KHANAM",
     "course": "BPT",
     "session": "2025-2026",
@@ -731,14 +779,15 @@
     "police_station": null,
     "district": null,
     "state": null,
-    "pin": "",
-    "photo": null
+    "pin": null,
+    "photo": "photos/SILIMA KHANAM",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/50",
+    "id_card_no": "RCPHS/25/BPT/52",
     "name": "UMME MUSFIKA AHMED",
     "course": "BPT",
-    "session": "2025/2026",
+    "session": "2025-2026",
     "father_name": "MOYNAL HOQUE",
     "mother_name": "AKLIMA BEGUM",
     "address": "KRISHNAI GURIA PT 1",
@@ -747,11 +796,12 @@
     "district": "GOALPARA",
     "state": "ASSAM",
     "pin": "783126",
-    "photo": null
+    "photo": "photos/UMME MUSFIKA AHMED",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/51",
-    "name": "WASIM FIRDUS CHOUDHURI",
+    "id_card_no": "RCPHS/25/BPT/53",
+    "name": "WASIM FIRDUS CHOUDHURI ",
     "course": "BPT",
     "session": "2025-2026",
     "father_name": "SIRAJ CHOUDHURY ",
@@ -762,10 +812,11 @@
     "district": "HOJAI ",
     "state": "ASSAM ",
     "pin": "782440",
-    "photo": null
+    "photo": "photos/WASIM FIRDUS CHOUDHURI",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/52",
+    "id_card_no": "RCPHS/25/BPT/54",
     "name": "ZAKARIYA MONDAL",
     "course": "BPT",
     "session": "2025-2026",
@@ -777,11 +828,12 @@
     "district": "DHUBRI ",
     "state": "ASSAM ",
     "pin": "783348",
-    "photo": null
+    "photo": "photos/ZAKARIYA MONDAL",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/53",
-    "name": "SANIDUL HAQUE",
+    "id_card_no": "RCPHS/25/BMLT/01",
+    "name": "SANIDUL HAQUE ",
     "course": "BMLT",
     "session": "2025-2026",
     "father_name": "JURAN ALI ",
@@ -791,11 +843,12 @@
     "police_station": "MUKALMUA ",
     "district": "NALBARI ",
     "state": "ASSAM",
-    "pin": "781138",
-    "photo": null
+    "pin": 781138,
+    "photo": "photos/SANIDUL HAQUE",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/54",
+    "id_card_no": "RCPHS/23/BPT/31",
     "name": "SAHIL KHAN",
     "course": "BPT (LATERAL ENTRY)",
     "session": "2023-2024",
@@ -807,10 +860,11 @@
     "district": "NALBARI",
     "state": "ASSAM",
     "pin": "781334",
-    "photo": null
+    "photo": "photos/SAHIL KHAN",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/55",
+    "id_card_no": "RCPHS/23/BPT/32",
     "name": "MONALISHA PATHAK",
     "course": "BPT (LATERAL ENTRY)",
     "session": "2023-2024",
@@ -822,11 +876,12 @@
     "district": "KAMRUP (RURAL)",
     "state": "ASSAM ",
     "pin": "781102",
-    "photo": null
+    "photo": "photos/MONALISHA PATHAK",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/56",
-    "name": "ARIFUN NEHA",
+    "id_card_no": "RCPHS/23/BPT/33",
+    "name": "ARIFUN NEHA ",
     "course": "BPT (LATERAL ENTRY)",
     "session": "2023-2024",
     "father_name": "ANOWAR HUSSAIN ",
@@ -837,10 +892,11 @@
     "district": "KAMRUP METRO",
     "state": "ASSAM",
     "pin": "781011",
-    "photo": null
+    "photo": "photos/ARIFUN NEHA",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/57",
+    "id_card_no": null,
     "name": "SUMAN SHARMA",
     "course": "MMLT",
     "session": "2025-26",
@@ -852,10 +908,11 @@
     "district": "KAMRUP METRO",
     "state": "ASSAM",
     "pin": "781021",
-    "photo": null
+    "photo": "photos/SUMAN SHARMA",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/58",
+    "id_card_no": null,
     "name": "SAMIRUN BEGUM",
     "course": "MMLT",
     "session": "2025-2026",
@@ -867,14 +924,15 @@
     "district": "KAMRUP",
     "state": "ASSAM",
     "pin": "781104",
-    "photo": null
+    "photo": "photos/SAMIRUN BEGUM",
+    "__EMPTY": null
   },
   {
-    "id_card_no": "RCPHS/25/BPT/59",
+    "id_card_no": null,
     "name": "MALEKA KHATUN",
     "course": "MMLT",
     "session": "2025-2026",
-    "father_name": "ABDUL MANnull",
+    "father_name": "ABDUL MANNAN",
     "mother_name": "SHAMARTA BHANU",
     "address": "MAIRAKUCHI PT-1",
     "post_office": "AIRKATA",
@@ -882,7 +940,23 @@
     "district": "DHUBRI",
     "state": "ASSAM",
     "pin": "783330",
-    "photo": null
+    "photo": "photos/MALEKA KHATUN",
+    "__EMPTY": null
+  },
+  {
+    "id_card_no": "RCPHS/22/BPT/13",
+    "name": "BONJOVI BARUAH",
+    "course": "BPT",
+    "session": "2022-2023",
+    "father_name": "LET KAILASH BARUAH",
+    "mother_name": "NABANITA KALITA",
+    "address": "KHARKHOWA PARA DEOMORNOI .TOWN - MANGALDAI",
+    "post_office": "DEOMORNOI",
+    "police_station": "SIPAJHAR",
+    "district": "DARRANG",
+    "state": "ASSAM",
+    "pin": "784147",
+    "photo": "photos/BONJOVI BARUAH",
+    "__EMPTY": null
   }
 ]
-
