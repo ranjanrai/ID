@@ -59,3 +59,11 @@ font-size:18px;
 font-weight:bold;
 
 }
+table{
+margin-top:20px;
+border-collapse:collapse;
+}
+
+td{
+padding:6px 10px;
+}
