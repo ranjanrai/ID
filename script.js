@@ -35,22 +35,38 @@ let name = document.getElementById("searchName").value.toUpperCase();
 let result = document.getElementById("result");
 
 if(name==""){
-result.innerHTML="Please enter student name";
+result.innerHTML="Enter student name";
 return;
 }
 
-if(pdfText.toUpperCase().includes(name)){
+let index = pdfText.toUpperCase().indexOf(name);
 
-result.innerHTML=
-"<h2 style='color:green'>✅ ID VERIFIED</h2>" +
-"<p>Student Name: <b>"+name+"</b></p>" +
-"<p>Record found in ID database.</p>";
-
-}
-else{
+if(index==-1){
 
 result.innerHTML="<span style='color:red'>❌ No Record Found</span>";
+return;
 
 }
+
+/* Extract text around the student name */
+
+let start = index - 150;
+let end = index + 400;
+
+if(start < 0) start = 0;
+
+let studentData = pdfText.substring(start,end);
+
+/* Display data */
+
+result.innerHTML = `
+
+<h2 style="color:green">✔ ID VERIFIED</h2>
+
+<pre style="text-align:left;white-space:pre-wrap;font-size:16px">
+${studentData}
+</pre>
+
+`;
 
 }
